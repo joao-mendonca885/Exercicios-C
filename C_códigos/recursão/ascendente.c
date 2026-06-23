@@ -17,7 +17,7 @@ int crescente(int a[], int n, int *eh_crescente){
 
 int main(){
     int n;
-    printf("Digite o valor de n(2 até 10): ");
+    printf("Digite o valor de n(1 até 10): ");
     scanf("%d", &n);
     int eh_crescente = 1;
     int a[10] = {0, 2, 5, 7, 2 , 1, 7, 8, 3, 9};

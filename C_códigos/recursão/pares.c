@@ -2,7 +2,7 @@
 
 
 int pares(int i, int n){
-    if (i%2 == 0) printf("%d", i);
+    if (i%2 == 0) printf("%d ", i);
     if (i==n) return i;
     else return pares(i+1, n);
 }

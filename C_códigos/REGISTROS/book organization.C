@@ -171,9 +171,6 @@ void crescenteAnoPublicacao(Tlivro livro[], int n) {
     }
     imprimirListaCronologica(livro, n);
 }
-
-
-
 int main() {
     Tlivro livro[MAX];
     int n = 2;

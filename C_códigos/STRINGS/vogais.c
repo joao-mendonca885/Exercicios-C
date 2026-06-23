@@ -39,6 +39,6 @@ int main(){
     char s[100];
     printf("Digite sua string: ");
     scanf(" %99[^\n]", s);
-    printf("Número de consoantes: %d", consoantes(s));
+    printf("Número de consoantes: %d\n", consoantes(s));
     printf("Número de vogais: %d", vogais(s));
 }

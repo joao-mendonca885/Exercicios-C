@@ -3,7 +3,6 @@
 #define MAX 100
 
 char *inverter(char s[]){
-    strlen(s);
     int i;
     char n[100];
     int y=0;
