@@ -12,11 +12,10 @@ char *inverterString(char s[]){
     return s;
 }
 
-
-
 int main(){
     char s[100];
     printf("Digite sua string: ");
     fgets(s, sizeof(s), stdin);
     printf("%s", inverterString(s));
+    return 0;
 }
