@@ -7,12 +7,18 @@ int fat(int n){
     }
     return fatorial;
 }
-
+int funcao(int n, int r){
+    int c = (fat(n))/(fat(r) * fat(n-r));
+    return c;
+}
 
 int main(){
-    int n;
+    int n, r;
     printf("Digite um número: ");
     scanf("%d", &n);
-    fat(n);
+    printf("Digite um número");
+    scanf("%d", &r);
+    printf("Combinações: %d",funcao(n, r));
+    
     return 0;
 }

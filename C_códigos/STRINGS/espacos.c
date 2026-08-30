@@ -18,6 +18,13 @@ char *removeSpaces(char s[]){
     return n;
 }
 
+void StringEspacada(char s[], int i){
+    if (s[i] == '\0') return;
+    printf("%c ", s[i]);
+    StringEspacada(s, i+1);
+}
+
+
 int main(){
     char s[100];
     printf("Digite sua string: ");
