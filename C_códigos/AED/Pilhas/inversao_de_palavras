@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+void inverter_palavras_pilhas() {
+    char frase[100];
+    printf("Digite uma frase: ");
+    fgets(frase, sizeof(frase), stdin);
+
+    // Remover o caractere de nova linha, se presente
+    frase[strcspn(frase, "\n")] = 0;
+
+    // Criar uma pilha para armazenar as palavras
+    char *pilha[100];
+    int topo = -1;
+
+    // Tokenizar a frase em palavras
+    char *palavra = strtok(frase, " ");
+    while (palavra != NULL) {
+        pilha[++topo] = palavra; // Empilhar a palavra
+        palavra = strtok(NULL, " ");
+    }
+
+    printf("Frase invertida:\n");
+    while (topo >= 0) {
+        printf("%s ", pilha[topo--]); // Desempilhar e imprimir a palavra
+    }
+    printf("\n");
+}
